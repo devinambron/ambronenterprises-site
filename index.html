@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ambron Enterprises is a product-led company building and investing in software businesses focused on powerful, but easy-to-use applications.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="robots" content="max-image-preview:large">
+    <title>Ambron Enterprises</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<!-- Load Google Fonts - Improved font loading -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<!-- Add Font Awesome for social media icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<style>
+		/* Additional styles specific to this page */
+        :root {
+            --primary-color: #0d47a1;
+            --secondary-color: #2e7d32;
+            --tertiary-color: #ed6c02;
+            --dark-color: #212121;
+            --light-color: #f5f5f5;
+            --spacing-xs: 1rem;
+            --spacing-sm: 2rem;
+            --spacing-md: 4rem;
+            --spacing-lg: 6rem;
+            --spacing-xl: 8rem;
+            --heading-font: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+            --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --wp--custom--typography--line-height--tiny: 1.15;
+            --wp--custom--typography--line-height--small: 1.2;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--body-font);
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #ffffff;
+            font-size: 16px;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            padding: var(--spacing-md) 0;
+            position: relative;
+        }
+        
+        .section-divider {
+            width: 60px;
+            height: 4px;
+            background-color: var(--dark-color);
+            margin: var(--spacing-xs) 0 var(--spacing-sm) 0;
+            opacity: 0.6;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        
+        /* Updated heading styles to match original Poppins style */
+        h1, h2, h3, h4 {
+            font-family: var(--heading-font);
+            font-weight: 200;
+            line-height: var(--wp--custom--typography--line-height--tiny);
+            margin-top: 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 78px;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        h2 {
+            font-size: 2.75rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        h5 {
+            font-family: var(--heading-font);
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 4px;
+            line-height: 1.8em;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto var(--spacing-md) auto;
+            font-weight: 300;
+        }
+        
+        .logo {
+            max-width: 200px;
+            margin: 0 auto var(--spacing-sm) auto;
+            display: block;
+        }
+        
+        .company-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: var(--spacing-md);
+            margin: var(--spacing-sm) 0;
+        }
+        
+        .company-card {
+            padding: var(--spacing-sm);
+            background-color: var(--light-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .company-card h3 {
+            text-align: left;
+        }
+        
+        .company-card p {
+            flex-grow: 1;
+            margin-bottom: 1.5rem;
+        }
+        
+        .company-logo {
+            max-width: 150px;
+            margin-bottom: var(--spacing-xs);
+            height: 60px;
+            object-fit: contain;
+            object-position: left;
+        }
+        
+        .service-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-pill {
+            background-color: rgba(13, 71, 161, 0.1);
+            color: var(--primary-color);
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .link-arrow {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: auto;
+        }
+        
+        .link-arrow::after {
+            content: "→";
+            margin-left: 8px;
+            transition: transform 0.2s ease;
+        }
+        
+        .link-arrow:hover::after {
+            transform: translateX(4px);
+        }
+        
+        .link-arrow:hover {
+            text-decoration: underline;
+        }
+        
+        .product-lab {
+            background-color: var(--light-color);
+            padding: var(--spacing-lg) 0;
+        }
+        
+        .stealth-product {
+            margin-top: var(--spacing-sm);
+            padding: var(--spacing-sm);
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        
+        .stealth-product h3 {
+            text-align: left;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: var(--spacing-md) 0;
+        }
+        
+        footer h3 {
+            color: white;
+            text-align: left;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-sm);
+        }
+        
+        .footer-bottom {
+            margin-top: var(--spacing-md);
+            padding-top: var(--spacing-sm);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: var(--spacing-xs);
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        ul.feature-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 2rem;
+        }
+        
+        ul.feature-list li {
+            margin-bottom: 0.75rem;
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: 1.125rem;
+        }
+        
+        ul.feature-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+        
+        a:hover {
+            color: #083378;
+        }
+        
+        #about, #companies, #product-lab, #contact {
+            scroll-margin-top: 2rem;
+        }
+        
+        @media (max-width: 992px) {
+            .company-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: var(--spacing-sm);
+            }
+            
+            h1 {
+                font-size: 60px;
+            }
+            
+            h2 {
+                font-size: 2.25rem;
+            }
+            
+            .container {
+                width: 95%;
+            }
+            
+            .hero {
+                padding: var(--spacing-md) 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: var(--spacing-sm) 0;
+            }
+            
+            .hero h1 {
+                font-size: 44px;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+                margin-bottom: var(--spacing-sm);
+            }
+            
+            .company-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-sm);
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-xs);
+            }
+            
+            section {
+                padding: var(--spacing-sm) 0;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            h3 {
+                font-size: 1.75rem;
+            }
+            
+            .company-card {
+                padding: 1.5rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            ul.feature-list li {
+                font-size: 1rem;
+            }
+            
+            .service-pills {
+                justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+            
+            .footer-bottom {
+                margin-top: var(--spacing-sm);
+                padding-top: var(--spacing-xs);
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            h3 {
+                font-size: 1.25rem;
+            }
+            
+            .container {
+                width: 95%;
+                padding: 0 0.5rem;
+            }
+            
+            .section-divider {
+                margin: var(--spacing-xs) auto;
+            }
+            
+            .logo {
+                max-width: 150px;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .social-links a {
+                width: 36px;
+                height: 36px;
+            }
+            
+            .company-card {
+                padding: 1rem;
+            }
+            
+            .company-logo {
+                max-width: 120px;
+                height: 50px;
+            }
+            
+            footer h3 {
+                text-align: center;
+            }
+            
+            .footer-grid ul {
+                text-align: center;
+            }
+            
+            .service-pill {
+                font-size: 0.75rem;
+                padding: 0.25rem 0.6rem;
+            }
+            
+            .stealth-product {
+                padding: 1rem;
+            }
+        }
+	</style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <img src="images/Ambron-Enterprises-Alt-Logo.png" alt="Ambron Enterprises Logo" class="logo">
+            <h1>We build and launch digital products.</h1>
+            <p>Ambron Enterprises is a venture studio and product lab based in Austin, Texas. We create, operate, and grow high-leverage digital businesses across software, consumer apps, and marketing infrastructure.</p>
+            <div class="section-divider" style="margin: 0 auto;"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>Built for builders.</h2>
+            <div class="section-divider"></div>
+            <p>Founded in 2018, Ambron Enterprises, LLC is a privately held company that develops and operates brands across marketing, software, and product development. Our internal infrastructure powers both service-based companies and standalone software products, with an emphasis on user experience, design systems, and speed to launch.</p>
+            
+            <ul class="feature-list">
+                <li>HQ: Austin, TX</li>
+                <li>Privately owned</li>
+                <li>Operating across web, app, and SaaS sectors</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Companies Section -->
+    <section id="companies">
+        <div class="container">
+            <h2>Our Companies</h2>
+            <div class="section-divider"></div>
+            
+            <div class="company-grid">
+                <div class="company-card">
+                    <img src="images/Builtwell-Logo-Black.png" alt="Builtwell Digital Logo" class="company-logo">
+                    <h3>Builtwell Digital</h3>
+                    <p>Our internal agency for custom web development, digital infrastructure, and marketing automation. Builtwell helps brands launch high-converting websites and web applications—designed to scale with speed and precision.</p>
+                    
+                    <div class="service-pills">
+                        <span class="service-pill">Web Development</span>
+                        <span class="service-pill">Marketing Automation</span>
+                        <span class="service-pill">Digital Strategy</span>
+                    </div>
+                    
+                    <a href="https://builtwelldigital.com/" class="link-arrow">Visit Builtwell</a>
+                </div>
+                
+                <div class="company-card">
+                    <img src="images/Artboard-1-copy.png" alt="Productivity Type Logo" class="company-logo">
+                    <h3>Productivity Type</h3>
+                    <p>A psychometric framework that helps founders identify their cognitive strengths, preferred work styles, and best-fit collaborators.</p>
+                    
+                    <div class="service-pills">
+                        <span class="service-pill">Personality Assessment</span>
+                        <span class="service-pill">Team Building</span>
+                        <span class="service-pill">Founder Resources</span>
+                    </div>
+                    
+                    <a href="https://productivitytype.com/" class="link-arrow">Visit Productivity Type</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Lab Section -->
+    <section id="product-lab" class="product-lab">
+        <div class="container">
+            <h2>Exploring what's next.</h2>
+            <div class="section-divider"></div>
+            <p>Through our internal product lab, we develop consumer-facing applications that tackle overlooked problems in everyday life. Our current focus is in personal finance and decision-making—where we believe design and psychology can unlock better outcomes.</p>
+            
+            <div class="stealth-product">
+                <h3>In Progress: 🔒 Stealth Mode iOS App</h3>
+                <p>A new kind of personal finance tool — focused on clarity, control, and daily decision-making. Launching in 2025.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Support & Contact</h2>
+            <div class="section-divider"></div>
+            <p>Need help? Interested in partnerships? Reach out.</p>
+            
+            <ul class="feature-list">
+                <li>📧 Email: <a href="mailto:team@ambronenterprises.com">team@ambronenterprises.com</a></li>
+                <li>📍 Address: 2028 E. Ben White Blvd #240-7834, Austin, TX 78741</li>
+                <li>📞 Phone: <a href="tel:+15126938574">(512) 693-8574</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html">
+                        <img src="images/Ambron-Enterprises-Alt-Logo.png" alt="Ambron Enterprises Logo" style="max-width: 120px; filter: brightness(0) invert(1);">
+                    </a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/ambron-enterprises/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Links</h3>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li><a href="#about" style="color: white; text-decoration: none;">About</a></li>
+                        <li><a href="#companies" style="color: white; text-decoration: none;">Companies</a></li>
+                        <li><a href="#product-lab" style="color: white; text-decoration: none;">Product Lab</a></li>
+                        <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Ambron Enterprises, LLC</p>
+                <p><a href="privacy-policy.html" style="color: rgba(255,255,255,0.7); text-decoration: underline;">Privacy Policy</a> | <a href="terms-of-use.html" style="color: rgba(255,255,255,0.7); text-decoration: underline;">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

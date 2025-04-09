@@ -1,0 +1,390 @@
+/* 
+ * Simplified stylesheet for Ambron Enterprises static site
+ * Based on Twenty Twenty-Two WordPress theme
+ */
+
+:root {
+  --wp--preset--color--black: #000000;
+  --wp--preset--color--white: #ffffff;
+  --wp--preset--color--foreground: #000000;
+  --wp--preset--color--background: #ffffff;
+  --wp--preset--color--primary: #1a4548;
+  --wp--preset--color--secondary: #ffe2c7;
+  --wp--preset--color--tertiary: #F6F6F6;
+  --wp--preset--font-size--small: 1rem;
+  --wp--preset--font-size--medium: 1.125rem;
+  --wp--preset--font-size--large: 1.75rem;
+  --wp--preset--font-size--x-large: clamp(1.75rem, 3vw, 2.25rem);
+  --wp--preset--font-family--system-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  --wp--preset--font-family--source-serif-pro: "Source Serif Pro", serif;
+  --wp--custom--typography--font-size--huge: clamp(2.25rem, 4vw, 2.75rem);
+  --wp--custom--typography--font-size--gigantic: clamp(2.75rem, 6vw, 3.25rem);
+  --wp--custom--typography--font-size--colossal: clamp(3.25rem, 8vw, 6.25rem);
+  --wp--custom--typography--line-height--tiny: 1.15;
+  --wp--custom--typography--line-height--small: 1.2;
+  --wp--custom--typography--line-height--medium: 1.4;
+  --wp--custom--typography--line-height--normal: 1.6;
+}
+
+/* Basic styles */
+body {
+  background-color: var(--wp--preset--color--background);
+  color: var(--wp--preset--color--foreground);
+  font-family: var(--wp--preset--font-family--system-font);
+  font-size: var(--wp--preset--font-size--medium);
+  line-height: var(--wp--custom--typography--line-height--normal);
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: var(--wp--preset--color--foreground);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Headings */
+h1 {
+  font-family: var(--wp--preset--font-family--source-serif-pro);
+  font-size: var(--wp--custom--typography--font-size--colossal);
+  font-weight: 300;
+  line-height: var(--wp--custom--typography--line-height--tiny);
+}
+
+h2 {
+  font-family: var(--wp--preset--font-family--source-serif-pro);
+  font-size: var(--wp--custom--typography--font-size--gigantic);
+  font-weight: 300;
+  line-height: var(--wp--custom--typography--line-height--small);
+}
+
+h3 {
+  font-family: var(--wp--preset--font-family--source-serif-pro);
+  font-size: var(--wp--custom--typography--font-size--huge);
+  font-weight: 300;
+  line-height: var(--wp--custom--typography--line-height--tiny);
+}
+
+h4 {
+  font-family: var(--wp--preset--font-family--source-serif-pro);
+  font-size: var(--wp--preset--font-size--x-large);
+  font-weight: 300;
+  line-height: var(--wp--custom--typography--line-height--tiny);
+}
+
+h5 {
+  font-family: var(--wp--preset--font-family--system-font);
+  font-size: var(--wp--preset--font-size--medium);
+  font-weight: 700;
+  line-height: var(--wp--custom--typography--line-height--normal);
+  text-transform: uppercase;
+}
+
+h6 {
+  font-family: var(--wp--preset--font-family--system-font);
+  font-size: var(--wp--preset--font-size--medium);
+  font-weight: 400;
+  line-height: var(--wp--custom--typography--line-height--normal);
+  text-transform: uppercase;
+}
+
+/* Layout */
+.wp-site-blocks {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Utility classes */
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+/* Background colors */
+.has-primary-background-color {
+  background-color: var(--wp--preset--color--primary) !important;
+}
+
+.has-secondary-background-color {
+  background-color: var(--wp--preset--color--secondary) !important;
+}
+
+.has-tertiary-background-color {
+  background-color: var(--wp--preset--color--tertiary) !important;
+}
+
+.has-background-background-color {
+  background-color: var(--wp--preset--color--background) !important;
+}
+
+.has-foreground-background-color {
+  background-color: var(--wp--preset--color--foreground) !important;
+}
+
+/* Text colors */
+.has-primary-color {
+  color: var(--wp--preset--color--primary) !important;
+}
+
+.has-secondary-color {
+  color: var(--wp--preset--color--secondary) !important;
+}
+
+.has-tertiary-color {
+  color: var(--wp--preset--color--tertiary) !important;
+}
+
+.has-background-color {
+  color: var(--wp--preset--color--background) !important;
+}
+
+.has-foreground-color {
+  color: var(--wp--preset--color--foreground) !important;
+}
+
+/* Font sizes */
+.has-small-font-size {
+  font-size: var(--wp--preset--font-size--small) !important;
+}
+
+.has-medium-font-size {
+  font-size: var(--wp--preset--font-size--medium) !important;
+}
+
+.has-large-font-size {
+  font-size: var(--wp--preset--font-size--large) !important;
+}
+
+.has-x-large-font-size {
+  font-size: var(--wp--preset--font-size--x-large) !important;
+}
+
+/* Button styles */
+.wp-element-button {
+  background-color: #32373c;
+  border-width: 0;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: calc(0.667em + 2px) calc(1.333em + 2px);
+  text-decoration: none;
+}
+
+.wp-element-button:hover {
+  background-color: #4d555d;
+}
+
+/* Divi Builder Styles */
+.et_pb_section {
+  padding: 50px 0;
+  position: relative;
+  background-color: #fff;
+}
+
+.et_section_regular {
+  padding: 50px 0;
+}
+
+.et_section_transparent {
+  background-color: transparent;
+}
+
+.et_pb_row {
+  position: relative;
+  width: 80%;
+  max-width: 1080px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.et_pb_column {
+  float: left;
+  position: relative;
+  z-index: 9;
+  background-position: center;
+  background-size: cover;
+}
+
+.et_pb_column_4_4 {
+  width: 100%;
+}
+
+.et_pb_column_1_4 {
+  width: 22.75%;
+  margin-right: 3%;
+}
+
+.et-last-child {
+  margin-right: 0 !important;
+}
+
+.et_pb_module {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.et_pb_text_align_left {
+  text-align: left;
+}
+
+.et_pb_text_align_center {
+  text-align: center;
+}
+
+.et_pb_bg_layout_light {
+  color: #666;
+}
+
+.et_pb_text_inner {
+  position: relative;
+}
+
+.et_pb_image_wrap {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+}
+
+.et_pb_image_wrap img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.et_pb_equal_columns .et_pb_column {
+  margin-bottom: 0;
+}
+
+.et_pb_css_mix_blend_mode_passthrough {
+  mix-blend-mode: unset !important;
+}
+
+.et_pb_module img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.et_pb_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0;
+}
+
+.et_pb_divider {
+  margin: 0 0 30px 0;
+  position: relative;
+}
+
+.et_pb_divider_internal {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.et_pb_space {
+  border: none;
+  height: 30px;
+}
+
+/* Social Media Icons */
+.et_pb_social_media_follow {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.et_pb_social_media_follow li {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+  list-style-type: none !important;
+}
+
+.et_pb_social_media_follow li a.icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.et_pb_social_media_follow li a.icon:hover {
+  background-color: #0077B5; /* LinkedIn blue */
+}
+
+.et_pb_social_media_follow li a.icon i {
+  font-size: 20px;
+  color: white;
+}
+
+.et_pb_social_media_follow_network_name {
+  display: none;
+}
+
+/* Clear floats */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* Media queries */
+@media (max-width: 980px) {
+  .wp-site-blocks {
+    padding: 0 10px;
+  }
+  
+  .et_pb_column {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  
+  .et_pb_section {
+    padding: 50px 0 20px;
+  }
+  
+  .et_pb_row {
+    padding: 20px 0;
+  }
+  
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+  }
+  
+  h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .et_pb_row {
+    width: 90%;
+  }
+} 
