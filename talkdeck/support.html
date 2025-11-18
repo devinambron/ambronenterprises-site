@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TalkDeck Support - Get help with TalkDeck iOS app. Find answers to frequently asked questions, contact support, and access resources.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="robots" content="max-image-preview:large">
+    <title>Support - TalkDeck | Ambron Enterprises</title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<!-- Load Google Fonts - Improved font loading -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<!-- Add Font Awesome for social media icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<style>
+		/* Additional styles specific to this page */
+        :root {
+            --primary-color: #0d47a1;
+            --secondary-color: #2e7d32;
+            --tertiary-color: #ed6c02;
+            --dark-color: #212121;
+            --light-color: #f5f5f5;
+            --spacing-xs: 1rem;
+            --spacing-sm: 2rem;
+            --spacing-md: 4rem;
+            --spacing-lg: 6rem;
+            --spacing-xl: 8rem;
+            --heading-font: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+            --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --wp--custom--typography--line-height--tiny: 1.15;
+            --wp--custom--typography--line-height--small: 1.2;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--body-font);
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #ffffff;
+            font-size: 16px;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            padding: var(--spacing-md) 0;
+            position: relative;
+        }
+        
+        .section-divider {
+            width: 60px;
+            height: 4px;
+            background-color: var(--dark-color);
+            margin: var(--spacing-xs) 0 var(--spacing-sm) 0;
+            opacity: 0.6;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        
+        /* Updated heading styles to match original Poppins style */
+        h1, h2, h3, h4 {
+            font-family: var(--heading-font);
+            font-weight: 200;
+            line-height: var(--wp--custom--typography--line-height--tiny);
+            margin-top: 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 78px;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        h2 {
+            font-size: 2.75rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        
+        h4 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            text-align: left;
+            font-weight: 400;
+        }
+        
+        h5 {
+            font-family: var(--heading-font);
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 4px;
+            line-height: 1.8em;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto var(--spacing-md) auto;
+            font-weight: 300;
+        }
+        
+        .logo {
+            max-width: 200px;
+            margin: 0 auto var(--spacing-sm) auto;
+            display: block;
+        }
+        
+        .app-logo {
+            max-width: 120px;
+            height: auto;
+            margin: 0 auto var(--spacing-xs) auto;
+            display: block;
+        }
+        
+        .home-link {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: var(--spacing-md);
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .home-link svg {
+            margin-right: 0.5rem;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background-color: var(--light-color);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            margin: var(--spacing-md) 0;
+        }
+        
+        .contact-section h3 {
+            text-align: center;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .contact-info {
+            text-align: center;
+        }
+        
+        .contact-info p {
+            margin-bottom: 0.75rem;
+            font-size: 1.125rem;
+        }
+        
+        .contact-email {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: inline-block;
+            margin: var(--spacing-xs) 0;
+        }
+        
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+        
+        /* FAQ Section */
+        .faq-category {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .faq-category h3 {
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+        
+        .faq-question {
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            background-color: var(--light-color);
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            font-family: var(--body-font);
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: var(--dark-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s ease;
+        }
+        
+        .faq-question:hover {
+            background-color: rgba(13, 71, 161, 0.1);
+        }
+        
+        .faq-question:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: -2px;
+        }
+        
+        .faq-question-icon {
+            margin-left: 1rem;
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+        
+        .faq-item.active .faq-question-icon {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 1.5rem;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 2000px;
+            padding: 1.5rem;
+        }
+        
+        .faq-answer p {
+            margin-bottom: 1rem;
+            font-size: 1.125rem;
+        }
+        
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .faq-answer ul, .faq-answer ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        
+        .faq-answer li {
+            margin-bottom: 0.5rem;
+            font-size: 1.125rem;
+        }
+        
+        /* Quick Links Section */
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            margin: var(--spacing-md) 0;
+            flex-wrap: wrap;
+        }
+        
+        .quick-link {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .quick-link:hover {
+            background-color: #083378;
+            text-decoration: none;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            z-index: 1000;
+        }
+        
+        .back-to-top:hover {
+            background-color: #083378;
+            transform: translateY(-2px);
+        }
+        
+        .back-to-top.visible {
+            display: flex;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: var(--spacing-md) 0;
+            margin-top: var(--spacing-lg);
+        }
+        
+        footer h3 {
+            color: white;
+            text-align: left;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-sm);
+        }
+        
+        .footer-bottom {
+            margin-top: var(--spacing-md);
+            padding-top: var(--spacing-sm);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: var(--spacing-xs);
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+        
+        a:hover {
+            color: #083378;
+        }
+        
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 60px;
+            }
+            
+            h2 {
+                font-size: 2.25rem;
+            }
+            
+            .container {
+                width: 95%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: var(--spacing-sm) 0;
+            }
+            
+            .hero h1 {
+                font-size: 44px;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+                margin-bottom: var(--spacing-sm);
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-xs);
+            }
+            
+            section {
+                padding: var(--spacing-sm) 0;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            h3 {
+                font-size: 1.75rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            .home-link {
+                margin-bottom: var(--spacing-sm);
+            }
+            
+            .contact-section {
+                padding: var(--spacing-sm);
+            }
+            
+            .contact-email {
+                font-size: 1.25rem;
+            }
+            
+            .faq-question {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+            
+            .faq-answer {
+                padding: 0 1rem;
+            }
+            
+            .faq-item.active .faq-answer {
+                padding: 1rem;
+            }
+            
+            .faq-answer p, .faq-answer li {
+                font-size: 1rem;
+            }
+            
+            .quick-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .quick-link {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+            
+            .back-to-top {
+                bottom: 1rem;
+                right: 1rem;
+                width: 45px;
+                height: 45px;
+                font-size: 1.25rem;
+            }
+            
+            .footer-bottom {
+                margin-top: var(--spacing-sm);
+                padding-top: var(--spacing-xs);
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            h3 {
+                font-size: 1.25rem;
+            }
+            
+            .container {
+                width: 95%;
+                padding: 0 0.5rem;
+            }
+            
+            .section-divider {
+                margin: var(--spacing-xs) auto;
+            }
+            
+            .logo {
+                max-width: 150px;
+            }
+            
+            .app-logo {
+                max-width: 100px;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .social-links a {
+                width: 36px;
+                height: 36px;
+            }
+            
+            footer h3 {
+                text-align: center;
+            }
+            
+            .footer-grid ul {
+                text-align: center;
+            }
+            
+            .contact-email {
+                font-size: 1.125rem;
+            }
+        }
+	</style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <a href="../index.html">
+                <img src="../images/Ambron-Enterprises-Alt-Logo.png" alt="Ambron Enterprises Logo" class="logo">
+            </a>
+            <a href="index.html">
+                <img src="images/TalkDeck_AppStore.png" alt="TalkDeck App Logo" class="app-logo">
+            </a>
+            <h1>TalkDeck Support</h1>
+            <p>Get help with TalkDeck. Find answers to frequently asked questions, contact support, and access resources.</p>
+            <div class="section-divider" style="margin: 0 auto;"></div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <div class="container">
+                <a href="index.html" class="home-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                    </svg>
+                    Back to TalkDeck
+                </a>
+                
+                <!-- Contact Information Section -->
+                <div class="contact-section">
+                    <h3>Contact Support</h3>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> <a href="mailto:team@ambronenterprises.com" class="contact-email">team@ambronenterprises.com</a></p>
+                        <p>We typically respond within 24-48 hours</p>
+                        <p><strong>Company:</strong> Ambron Enterprises, LLC</p>
+                        <p><strong>Address:</strong> 2028 E. Ben White Blvd #240-7834, Austin, TX 78741</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <section id="faq">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="section-divider" style="margin: 0 auto;"></div>
+                    
+                    <!-- Getting Started -->
+                    <div class="faq-category">
+                        <h3>Getting Started</h3>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+                                <span>How do I get started with TalkDeck?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-1">
+                                <p>After downloading TalkDeck, you'll first see an age verification screen (the app is for users 18+). Once you confirm your age, you'll go through a brief onboarding process. Then you can browse conversation decks and start swiping through questions!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+                                <span>What are conversation decks?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-2">
+                                <p>Conversation decks are collections of questions organized by topic. We have decks for couples, family time, friends, travel, food, and more. Each deck contains thought-provoking questions designed to spark meaningful conversations.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+                                <span>How do I use the app?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-3">
+                                <p>Simply select a deck from the home screen, then swipe through questions like cards. Swipe right to answer a question, swipe left to skip it, or swipe up to rate it. It's that simple!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- App Features -->
+                    <div class="faq-category">
+                        <h3>App Features</h3>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+                                <span>What are the different play modes?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-4">
+                                <p>TalkDeck offers three ways to play:</p>
+                                <ul>
+                                    <li><strong>Progression Mode:</strong> Unlocks harder questions as you answer more, helping you build up to deeper conversations</li>
+                                    <li><strong>Free Play Mode:</strong> Access any question at any time - perfect for casual conversations</li>
+                                    <li><strong>Manual Mode:</strong> You control which level of questions to explore</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+                                <span>Can I track my progress?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-5">
+                                <p>Yes! TalkDeck tracks your progress through each deck, including questions answered, time spent, and your advancement through levels. You can view detailed statistics in the Settings menu.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-6">
+                                <span>Can I customize the app?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-6">
+                                <p>Absolutely! In Settings, you can:</p>
+                                <ul>
+                                    <li>Toggle sound effects and haptic feedback</li>
+                                    <li>Choose between light, dark, or automatic theme</li>
+                                    <li>Adjust content filtering preferences</li>
+                                    <li>Customize progressive mode settings</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Troubleshooting -->
+                    <div class="faq-category">
+                        <h3>Troubleshooting</h3>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-7">
+                                <span>The app won't load or crashes</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-7">
+                                <p>Try these steps:</p>
+                                <ol>
+                                    <li>Force close the app and reopen it</li>
+                                    <li>Restart your device</li>
+                                    <li>Make sure you're running iOS 17.0 or later</li>
+                                    <li>Check that you have enough storage space available</li>
+                                    <li>If the issue persists, contact us at <a href="mailto:team@ambronenterprises.com">team@ambronenterprises.com</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-8">
+                                <span>My progress isn't saving</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-8">
+                                <p>TalkDeck saves your progress automatically. If you're not seeing your progress:</p>
+                                <ol>
+                                    <li>Make sure you're not deleting and reinstalling the app (this will reset all data)</li>
+                                    <li>Check that you're using the same device</li>
+                                    <li>Try closing and reopening the app</li>
+                                    <li>If the issue continues, contact support</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-9">
+                                <span>I can't see certain decks</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-9">
+                                <p>Some decks are age-restricted. Make sure you've completed the age verification (18+). You can also check your content filtering settings in the Settings menu to ensure explicit content isn't hidden.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-10">
+                                <span>How do I reset my data?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-10">
+                                <p>You can reset your data in Settings → Statistics & Data → Reset All Data. This will permanently delete all your progress, statistics, and preferences. This action cannot be undone.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Privacy & Data -->
+                    <div class="faq-category">
+                        <h3>Privacy & Data</h3>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-11">
+                                <span>Does TalkDeck collect my personal information?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-11">
+                                <p>TalkDeck stores all data locally on your device. We don't collect, transmit, or share any personal information. All your progress, preferences, and statistics stay on your device. See our <a href="privacy-policy.html">Privacy Policy</a> for complete details.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-12">
+                                <span>Can I delete my data?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-12">
+                                <p>Yes! You can reset all data through the Settings menu, or simply delete the app from your device. All data is stored locally, so deleting the app removes everything.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-13">
+                                <span>Does TalkDeck use analytics or tracking?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-13">
+                                <p>No. TalkDeck does not use any analytics tools, tracking services, or advertising networks. Your privacy is our priority.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Content & Age Rating -->
+                    <div class="faq-category">
+                        <h3>Content & Age Rating</h3>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-14">
+                                <span>Why is the app 18+?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-14">
+                                <p>TalkDeck contains mature relationship content intended for adults. Some conversation decks include explicit sexual themes and language. We require age verification to ensure age-appropriate content access.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-15">
+                                <span>Can I filter explicit content?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-15">
+                                <p>Yes! During age verification, you can opt-in to content warnings. You can also adjust content filtering settings in the Settings menu to hide or show explicit decks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Technical Requirements -->
+                    <div class="faq-category">
+                        <h3>Technical Requirements</h3>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-16">
+                                <span>What devices does TalkDeck support?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-16">
+                                <p>TalkDeck is available for iPhone and iPad running iOS 17.0 or later. The app is optimized for both devices.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-17">
+                                <span>Does TalkDeck work offline?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-17">
+                                <p>Yes! TalkDeck works completely offline. All content is stored on your device, so you don't need an internet connection to use the app.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-18">
+                                <span>Will TalkDeck sync across my devices?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-18">
+                                <p>Currently, TalkDeck stores all data locally on each device. Data does not sync across devices. This is by design to protect your privacy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Account & Billing -->
+                    <div class="faq-category">
+                        <h3>Account & Billing</h3>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-19">
+                                <span>Do I need to create an account?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-19">
+                                <p>No! TalkDeck doesn't require an account. The app works immediately after download.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-20">
+                                <span>Is TalkDeck free?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-20">
+                                <p>Yes, TalkDeck is free to download and use. There are no in-app purchases or subscriptions.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-21">
+                                <span>Will TalkDeck always be free?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-21">
+                                <p>TalkDeck is currently free. If we introduce paid features in the future, we'll clearly communicate any changes and pricing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Feedback & Suggestions -->
+                    <div class="faq-category">
+                        <h3>Feedback & Suggestions</h3>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-22">
+                                <span>How can I provide feedback or suggest features?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-22">
+                                <p>We'd love to hear from you! Contact us at <a href="mailto:team@ambronenterprises.com">team@ambronenterprises.com</a> with your feedback, suggestions, or feature requests.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-23">
+                                <span>How can I report a bug?</span>
+                                <span class="faq-question-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="faq-23">
+                                <p>If you encounter a bug, please email us at <a href="mailto:team@ambronenterprises.com">team@ambronenterprises.com</a> with:</p>
+                                <ul>
+                                    <li>A description of the issue</li>
+                                    <li>Steps to reproduce it (if possible)</li>
+                                    <li>Your device model and iOS version</li>
+                                    <li>Any screenshots that might help</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quick Links Section -->
+                <section id="quick-links">
+                    <h2>Quick Links</h2>
+                    <div class="section-divider" style="margin: 0 auto;"></div>
+                    <div class="quick-links">
+                        <a href="privacy-policy.html" class="quick-link">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="quick-link">Terms of Service</a>
+                        <a href="index.html" class="quick-link">TalkDeck Home</a>
+                        <a href="../index.html" class="quick-link">Ambron Enterprises</a>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top" title="Back to top">
+        ↑
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="../index.html">
+                        <img src="../images/Ambron-Enterprises-Alt-Logo.png" alt="Ambron Enterprises Logo" style="max-width: 120px; filter: brightness(0) invert(1);">
+                    </a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/ambron-enterprises/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Links</h3>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li><a href="index.html" style="color: white; text-decoration: none;">TalkDeck Home</a></li>
+                        <li><a href="support.html" style="color: white; text-decoration: none;">Support</a></li>
+                        <li><a href="../index.html#about" style="color: white; text-decoration: none;">About</a></li>
+                        <li><a href="../index.html#companies" style="color: white; text-decoration: none;">Companies</a></li>
+                        <li><a href="../index.html#product-lab" style="color: white; text-decoration: none;">Product Lab</a></li>
+                        <li><a href="../index.html#contact" style="color: white; text-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Ambron Enterprises, LLC</p>
+                <p><a href="privacy-policy.html" style="color: rgba(255,255,255,0.7); text-decoration: underline;">Privacy Policy</a> | <a href="terms-of-service.html" style="color: rgba(255,255,255,0.7); text-decoration: underline;">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAQ Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I get started with TalkDeck?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "After downloading TalkDeck, you'll first see an age verification screen (the app is for users 18+). Once you confirm your age, you'll go through a brief onboarding process. Then you can browse conversation decks and start swiping through questions!"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are conversation decks?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Conversation decks are collections of questions organized by topic. We have decks for couples, family time, friends, travel, food, and more. Each deck contains thought-provoking questions designed to spark meaningful conversations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I use the app?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Simply select a deck from the home screen, then swipe through questions like cards. Swipe right to answer a question, swipe left to skip it, or swipe up to rate it. It's that simple!"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the different play modes?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "TalkDeck offers three ways to play: Progression Mode unlocks harder questions as you answer more, helping you build up to deeper conversations. Free Play Mode lets you access any question at any time - perfect for casual conversations. Manual Mode puts you in control of which level of questions to explore."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I track my progress?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! TalkDeck tracks your progress through each deck, including questions answered, time spent, and your advancement through levels. You can view detailed statistics in the Settings menu."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I customize the app?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely! In Settings, you can toggle sound effects and haptic feedback, choose between light, dark, or automatic theme, adjust content filtering preferences, and customize progressive mode settings."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "The app won't load or crashes",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Try these steps: 1) Force close the app and reopen it, 2) Restart your device, 3) Make sure you're running iOS 17.0 or later, 4) Check that you have enough storage space available, 5) If the issue persists, contact us at team@ambronenterprises.com"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "My progress isn't saving",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "TalkDeck saves your progress automatically. If you're not seeing your progress: 1) Make sure you're not deleting and reinstalling the app (this will reset all data), 2) Check that you're using the same device, 3) Try closing and reopening the app, 4) If the issue continues, contact support."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "I can't see certain decks",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Some decks are age-restricted. Make sure you've completed the age verification (18+). You can also check your content filtering settings in the Settings menu to ensure explicit content isn't hidden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I reset my data?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can reset your data in Settings → Statistics & Data → Reset All Data. This will permanently delete all your progress, statistics, and preferences. This action cannot be undone."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does TalkDeck collect my personal information?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "TalkDeck stores all data locally on your device. We don't collect, transmit, or share any personal information. All your progress, preferences, and statistics stay on your device. See our Privacy Policy for complete details."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I delete my data?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! You can reset all data through the Settings menu, or simply delete the app from your device. All data is stored locally, so deleting the app removes everything."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does TalkDeck use analytics or tracking?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. TalkDeck does not use any analytics tools, tracking services, or advertising networks. Your privacy is our priority."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why is the app 18+?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "TalkDeck contains mature relationship content intended for adults. Some conversation decks include explicit sexual themes and language. We require age verification to ensure age-appropriate content access."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I filter explicit content?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! During age verification, you can opt-in to content warnings. You can also adjust content filtering settings in the Settings menu to hide or show explicit decks."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What devices does TalkDeck support?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "TalkDeck is available for iPhone and iPad running iOS 17.0 or later. The app is optimized for both devices."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does TalkDeck work offline?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! TalkDeck works completely offline. All content is stored on your device, so you don't need an internet connection to use the app."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Will TalkDeck sync across my devices?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Currently, TalkDeck stores all data locally on each device. Data does not sync across devices. This is by design to protect your privacy."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need to create an account?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No! TalkDeck doesn't require an account. The app works immediately after download."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is TalkDeck free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, TalkDeck is free to download and use. There are no in-app purchases or subscriptions."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Will TalkDeck always be free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "TalkDeck is currently free. If we introduce paid features in the future, we'll clearly communicate any changes and pricing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I provide feedback or suggest features?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We'd love to hear from you! Contact us at team@ambronenterprises.com with your feedback, suggestions, or feature requests."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I report a bug?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "If you encounter a bug, please email us at team@ambronenterprises.com with: a description of the issue, steps to reproduce it (if possible), your device model and iOS version, and any screenshots that might help."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Accordion and Back to Top JavaScript -->
+    <script>
+        // Accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const faqItem = this.closest('.faq-item');
+                    const isActive = faqItem.classList.contains('active');
+                    
+                    // Close all other FAQ items
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        if (item !== faqItem) {
+                            item.classList.remove('active');
+                            const otherButton = item.querySelector('.faq-question');
+                            otherButton.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+                    
+                    // Toggle current FAQ item
+                    if (isActive) {
+                        faqItem.classList.remove('active');
+                        this.setAttribute('aria-expanded', 'false');
+                    } else {
+                        faqItem.classList.add('active');
+                        this.setAttribute('aria-expanded', 'true');
+                    }
+                });
+                
+                // Keyboard accessibility
+                question.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+            });
+        });
+        
+        // Back to Top button
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            
+            if (backToTopButton) {
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 300) {
+                        backToTopButton.classList.add('visible');
+                    } else {
+                        backToTopButton.classList.remove('visible');
+                    }
+                });
+                
+                backToTopButton.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
