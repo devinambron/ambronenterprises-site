@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TalkDeck - Start meaningful conversations. An iOS app featuring conversation decks with thought-provoking questions to help you explore interesting topics with friends, family, and loved ones.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="robots" content="max-image-preview:large">
+    <title>TalkDeck - Start Meaningful Conversations | Ambron Enterprises</title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<!-- Load Google Fonts - Improved font loading -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<!-- Add Font Awesome for social media icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<style>
+		/* Additional styles specific to this page */
+        :root {
+            --primary-color: #0d47a1;
+            --secondary-color: #2e7d32;
+            --tertiary-color: #ed6c02;
+            --dark-color: #212121;
+            --light-color: #f5f5f5;
+            --spacing-xs: 1rem;
+            --spacing-sm: 2rem;
+            --spacing-md: 4rem;
+            --spacing-lg: 6rem;
+            --spacing-xl: 8rem;
+            --heading-font: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+            --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --wp--custom--typography--line-height--tiny: 1.15;
+            --wp--custom--typography--line-height--small: 1.2;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--body-font);
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #ffffff;
+            font-size: 16px;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            padding: var(--spacing-md) 0;
+            position: relative;
+        }
+        
+        .section-divider {
+            width: 60px;
+            height: 4px;
+            background-color: var(--dark-color);
+            margin: var(--spacing-xs) 0 var(--spacing-sm) 0;
+            opacity: 0.6;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        
+        /* Updated heading styles to match original Poppins style */
+        h1, h2, h3, h4 {
+            font-family: var(--heading-font);
+            font-weight: 200;
+            line-height: var(--wp--custom--typography--line-height--tiny);
+            margin-top: 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 78px;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        h2 {
+            font-size: 2.75rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        
+        h5 {
+            font-family: var(--heading-font);
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 4px;
+            line-height: 1.8em;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto var(--spacing-md) auto;
+            font-weight: 300;
+        }
+        
+        .tagline {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            font-weight: 400;
+            margin-bottom: var(--spacing-sm);
+            font-style: italic;
+        }
+        
+        .logo {
+            max-width: 200px;
+            margin: 0 auto var(--spacing-sm) auto;
+            display: block;
+        }
+        
+        .app-logo {
+            max-width: 120px;
+            height: auto;
+            margin: 0 auto var(--spacing-xs) auto;
+            display: block;
+        }
+        
+        .features-section {
+            margin-top: var(--spacing-md);
+        }
+        
+        .features-section h2 {
+            text-align: center;
+        }
+        
+        .features-section h3 {
+            text-align: left;
+            margin-top: var(--spacing-sm);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-sm);
+            margin: var(--spacing-sm) 0;
+        }
+        
+        .feature-card {
+            padding: var(--spacing-sm);
+            background-color: var(--light-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        
+        .feature-card h4 {
+            font-family: var(--heading-font);
+            font-weight: 500;
+            font-size: 1.5rem;
+            text-align: left;
+            margin-bottom: 0.75rem;
+            color: var(--primary-color);
+        }
+        
+        .feature-card p {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+        
+        ul.feature-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 1rem;
+        }
+        
+        ul.feature-list li {
+            margin-bottom: 0.75rem;
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: 1.125rem;
+        }
+        
+        ul.feature-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .age-notice {
+            background-color: rgba(13, 71, 161, 0.1);
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem 1.5rem;
+            margin: var(--spacing-sm) 0;
+            border-radius: 4px;
+        }
+        
+        .age-notice p {
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+        
+        .app-store-link {
+            display: inline-block;
+            margin: var(--spacing-sm) 0;
+            padding: 1rem 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .app-store-link:hover {
+            background-color: #083378;
+            text-decoration: none;
+        }
+        
+        .app-store-link.disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        
+        .policy-content {
+            margin-top: var(--spacing-md);
+        }
+        
+        .policy-content h3 {
+            font-weight: 300;
+            margin-top: var(--spacing-md);
+        }
+        
+        .policy-content ul, .policy-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        
+        .policy-content li {
+            margin-bottom: 0.5rem;
+            font-size: 1.125rem;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: var(--spacing-md) 0;
+            margin-top: var(--spacing-lg);
+        }
+        
+        footer h3 {
+            color: white;
+            text-align: left;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-sm);
+        }
+        
+        .footer-bottom {
+            margin-top: var(--spacing-md);
+            padding-top: var(--spacing-sm);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: var(--spacing-xs);
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+        
+        a:hover {
+            color: #083378;
+        }
+        
+        .home-link {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: var(--spacing-md);
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .home-link svg {
+            margin-right: 0.5rem;
+        }
+        
+        .last-updated {
+            font-style: italic;
+            color: #666;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 60px;
+            }
+            
+            h2 {
+                font-size: 2.25rem;
+            }
+            
+            .container {
+                width: 95%;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: var(--spacing-sm) 0;
+            }
+            
+            .hero h1 {
+                font-size: 44px;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+                margin-bottom: var(--spacing-sm);
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-xs);
+            }
+            
+            section {
+                padding: var(--spacing-sm) 0;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            h3 {
+                font-size: 1.75rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            .policy-content li {
+                font-size: 1rem;
+            }
+            
+            .home-link {
+                margin-bottom: var(--spacing-sm);
+            }
+            
+            .policy-content {
+                margin-top: var(--spacing-sm);
+            }
+            
+            .footer-bottom {
+                margin-top: var(--spacing-sm);
+                padding-top: var(--spacing-xs);
+                text-align: center;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            h3 {
+                font-size: 1.25rem;
+            }
+            
+            .container {
+                width: 95%;
+                padding: 0 0.5rem;
+            }
+            
+            .section-divider {
+                margin: var(--spacing-xs) auto;
+            }
+            
+            .logo {
+                max-width: 150px;
+            }
+            
+            .app-logo {
+                max-width: 100px;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .social-links a {
+                width: 36px;
+                height: 36px;
+            }
+            
+            footer h3 {
+                text-align: center;
+            }
+            
+            .footer-grid ul {
+                text-align: center;
+            }
+            
+            .feature-card h4 {
+                font-size: 1.25rem;
+            }
+        }
+	</style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <a href="../index.html">
+                <img src="../images/Ambron-Enterprises-Alt-Logo.png" alt="Ambron Enterprises Logo" class="logo">
+            </a>
+            <img src="images/TalkDeck_AppStore.png" alt="TalkDeck App Logo" class="app-logo">
+            <h1>TalkDeck</h1>
+            <p class="tagline">Start meaningful conversations</p>
+            <p>TalkDeck is an iOS app designed to help people start meaningful conversations with friends, family, and loved ones. The app features conversation decks with thought-provoking questions that help you explore interesting topics together.</p>
+            <div class="section-divider" style="margin: 0 auto;"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="section-divider" style="margin: 0 auto;"></div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>Conversation Decks</h4>
+                    <p>Choose from different decks of questions for different situations - decks for couples, family time, hanging out with friends, travel, food, and more. Each deck has questions that help you talk about interesting topics.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>Three Ways to Play</h4>
+                    <ul class="feature-list">
+                        <li><strong>Progression mode</strong> unlocks harder questions as you answer more</li>
+                        <li><strong>Free play</strong> lets you see any question anytime</li>
+                        <li><strong>Manual mode</strong> puts you in control of which questions to try</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>Swipe Through Questions</h4>
+                    <p>Swipe through questions like cards. Swipe right to answer, swipe left to skip, or swipe up to rate a question. It's easy and fun to use.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>Privacy-First</h4>
+                    <p>All data is stored locally on your device. No data is transmitted to external servers, shared with third parties, or used for advertising.</p>
+                </div>
+            </div>
+            
+            <div class="age-notice">
+                <p><strong>Age Requirement:</strong> The app is designed for users 18 years and older and contains mature relationship content intended for adults.</p>
+            </div>
+            
+            <!-- App Store Link Placeholder -->
+            <div style="text-align: center; margin-top: var(--spacing-md);">
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Download TalkDeck on the App Store</p>
+                <a href="#" class="app-store-link disabled" onclick="return false;" aria-label="Download TalkDeck on the App Store (Coming Soon)">Coming Soon to the App Store</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Links Section -->
+    <section id="legal">
+        <div class="container">
+            <h2>Legal Information</h2>
+            <div class="section-divider" style="margin: 0 auto;"></div>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto;">
+                For detailed information about how we handle your data and the terms of using TalkDeck, please review our legal documents:
+            </p>
+            <div style="display: flex; justify-content: center; gap: var(--spacing-sm); margin-top: var(--spacing-md); flex-wrap: wrap;">
+                <a href="privacy-policy.html" class="app-store-link" style="text-decoration: none; display: inline-block;">
+                    Privacy Policy
+                </a>
+                <a href="terms-of-service.html" class="app-store-link" style="text-decoration: none; display: inline-block;">
+                    Terms of Service
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="../index.html">
+                        <img src="../images/Ambron-Enterprises-Alt-Logo.png" alt="Ambron Enterprises Logo" style="max-width: 120px; filter: brightness(0) invert(1);">
+                    </a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/ambron-enterprises/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Links</h3>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li><a href="../index.html#about" style="color: white; text-decoration: none;">About</a></li>
+                        <li><a href="../index.html#companies" style="color: white; text-decoration: none;">Companies</a></li>
+                        <li><a href="../index.html#product-lab" style="color: white; text-decoration: none;">Product Lab</a></li>
+                        <li><a href="../index.html#contact" style="color: white; text-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Ambron Enterprises, LLC</p>
+                <p><a href="privacy-policy.html" style="color: rgba(255,255,255,0.7); text-decoration: underline;">Privacy Policy</a> | <a href="terms-of-service.html" style="color: rgba(255,255,255,0.7); text-decoration: underline;">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
